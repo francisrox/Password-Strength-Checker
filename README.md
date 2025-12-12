@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Password Security Manager - Chrome Extension
 
 A Chrome extension for cybersecurity that analyzes password strength in real-time and securely stores credentials locally.
@@ -220,3 +221,7 @@ This is a personal cybersecurity project. Feel free to fork and modify!
 ---
 
 **Built for Cybersecurity Education** 🔐
+=======
+# Password-Strength-Checker
+A Chrome extension for real-time password strength analysis and secure local storage. Features character-by-character analysis, duplicate detection, password reuse warnings, and saves credentials to local text files. Built with Chrome Native Messaging and Python. Educational project.
+>>>>>>> 36eb67dbe67210290b54e99164b790e608a8b250
