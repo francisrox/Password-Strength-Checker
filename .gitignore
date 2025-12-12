@@ -1,0 +1,32 @@
+# .gitignore for Password Manager Extension
+
+# Vault folder - contains sensitive passwords
+vault/passwords.txt
+vault/*.txt
+vault/passwords_backup_*.txt
+
+# Keep the vault folder structure but ignore password files
+!vault/.gitkeep
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Editor files
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Python cache
+__pycache__/
+*.pyc
+*.pyo
+
+# Logs
+*.log
+
+# Temporary files
+*.tmp
+*.bak

@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Password Manager - Setup</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+      background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+      min-height: 100vh;
+      padding: 40px 20px;
+    }
+
+    .container {
+      max-width: 800px;
+      margin: 0 auto;
+      background: white;
+      border-radius: 16px;
+      padding: 40px;
+      box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+    }
+
+    h1 {
+      color: #1f2937;
+      margin-bottom: 12px;
+      font-size: 32px;
+    }
+
+    .subtitle {
+      color: #6b7280;
+      margin-bottom: 32px;
+      font-size: 16px;
+    }
+
+    .step {
+      margin-bottom: 32px;
+      padding: 24px;
+      background: #f9fafb;
+      border-radius: 12px;
+      border-left: 4px solid #667eea;
+    }
+
+    .step h2 {
+      color: #374151;
+      margin-bottom: 16px;
+      font-size: 20px;
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+
+    .step-number {
+      background: #667eea;
+      color: white;
+      width: 32px;
+      height: 32px;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-weight: 700;
+      font-size: 16px;
+    }
+
+    .step p {
+      color: #4b5563;
+      line-height: 1.6;
+      margin-bottom: 12px;
+    }
+
+    .code-block {
+      background: #1f2937;
+      color: #e5e7eb;
+      padding: 16px;
+      border-radius: 8px;
+      font-family: 'Courier New', monospace;
+      font-size: 14px;
+      overflow-x: auto;
+      margin: 12px 0;
+    }
+
+    .warning {
+      background: #fef3c7;
+      border: 2px solid #f59e0b;
+      padding: 16px;
+      border-radius: 8px;
+      margin: 16px 0;
+    }
+
+    .warning strong {
+      color: #92400e;
+      display: block;
+      margin-bottom: 8px;
+    }
+
+    .warning p {
+      color: #78350f;
+      margin: 0;
+    }
+
+    .success {
+      background: #d1fae5;
+      border: 2px solid #10b981;
+      padding: 16px;
+      border-radius: 8px;
+      margin: 16px 0;
+    }
+
+    .success strong {
+      color: #065f46;
+      display: block;
+      margin-bottom: 8px;
+    }
+
+    .success p {
+      color: #047857;
+      margin: 0;
+    }
+
+    .btn {
+      background: #667eea;
+      color: white;
+      border: none;
+      padding: 12px 24px;
+      border-radius: 8px;
+      font-size: 16px;
+      font-weight: 600;
+      cursor: pointer;
+      transition: background 0.3s;
+    }
+
+    .btn:hover {
+      background: #5568d3;
+    }
+
+    .feature-list {
+      list-style: none;
+      margin: 16px 0;
+    }
+
+    .feature-list li {
+      padding: 8px 0;
+      padding-left: 28px;
+      position: relative;
+      color: #4b5563;
+    }
+
+    .feature-list li:before {
+      content: "✓";
+      position: absolute;
+      left: 0;
+      color: #10b981;
+      font-weight: bold;
+      font-size: 18px;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>🔐 Password Security Manager</h1>
+    <p class="subtitle">Setup Instructions - Follow these steps to enable local password storage</p>
+
+    <div class="success">
+      <strong>✅ Extension Installed Successfully!</strong>
+      <p>Now complete the setup to enable secure local file storage.</p>
+    </div>
+
+    <div class="step">
+      <h2><span class="step-number">1</span> Install Python (if not already installed)</h2>
+      <p>This extension requires Python 3.7+ to save passwords as local files.</p>
+      <ul class="feature-list">
+        <li>Download from <a href="https://www.python.org/downloads/" target="_blank">python.org</a></li>
+        <li>Make sure to check "Add Python to PATH" during installation</li>
+        <li>Verify installation by opening Command Prompt and typing: <code>python --version</code></li>
+      </ul>
+    </div>
+
+    <div class="step">
+      <h2><span class="step-number">2</span> Run the Registration Script</h2>
+      <p>Navigate to the native-host folder and run the registration script:</p>
+      <div class="code-block">cd "d:\password strength\native-host"<br>register.bat</div>
+      <p>This will register the native messaging host with Chrome.</p>
+    </div>
+
+    <div class="step">
+      <h2><span class="step-number">3</span> Test the Extension</h2>
+      <p>Visit any website with a login form and try entering a password. You should see:</p>
+      <ul class="feature-list">
+        <li>Real-time password strength analysis</li>
+        <li>Character-by-character breakdown</li>
+        <li>Security suggestions</li>
+        <li>Password reuse warnings</li>
+      </ul>
+    </div>
+
+    <div class="warning">
+      <strong>⚠️ Important Security Notes</strong>
+      <p>• Passwords are stored in plain text files at: <code>d:\password strength\vault\</code></p>
+      <p>• Keep this folder secure and backed up</p>
+      <p>• Do not share these files or commit them to version control</p>
+      <p>• Consider encrypting the vault folder using Windows BitLocker or similar</p>
+    </div>
+
+    <div class="step">
+      <h2><span class="step-number">4</span> Features Overview</h2>
+      <ul class="feature-list">
+        <li><strong>Auto-Detection:</strong> Automatically detects password fields on any website</li>
+        <li><strong>Real-time Analysis:</strong> Analyzes password strength as you type</li>
+        <li><strong>Character Breakdown:</strong> Shows detailed character type analysis</li>
+        <li><strong>Pattern Detection:</strong> Warns about common weak patterns</li>
+        <li><strong>Reuse Detection:</strong> Alerts if you use the same password on multiple sites</li>
+        <li><strong>Local Storage:</strong> Saves each password in a separate file on your system</li>
+      </ul>
+    </div>
+
+    <button class="btn" onclick="window.close()">Got it! Close this tab</button>
+  </div>
+</body>
+</html>
