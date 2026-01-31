@@ -175,41 +175,6 @@ This will:
 - ✅ Remove all password files from vault
 - ✅ Keep folder structure intact
 
-**Then upload to GitHub:**
-```bash
-git init
-git add .
-git commit -m "Initial commit - Password Manager Extension"
-git remote add origin <your-github-repo-url>
-git push -u origin main
-```
-
-### **For Users Who Clone from GitHub:**
-
-```powershell
-# 1. Clone the repo
-git clone <your-repo-url>
-cd password-strength
-
-# 2. Install Python (if needed)
-# Download from python.org
-
-# 3. Run automated setup
-.\INSTALL.bat
-# Follow the prompts
-
-# 4. Restart Chrome and test!
-```
-
-**The vault will be empty for them** - they'll create their own passwords.
-
-## 🔒 Privacy & Security
-
-- ✅ **Your passwords are NEVER uploaded** - `.gitignore` prevents this
-- ✅ **Each user has their own vault** - passwords are system-specific
-- ✅ **No shared data** - completely isolated per installation
-- ✅ **Backup before cleaning** - your passwords are safe
-
 ## 📝 License
 
 Educational project for cybersecurity learning.
@@ -224,4 +189,3 @@ This is a personal cybersecurity project. Feel free to fork and modify!
 =======
 # Password-Strength-Checker
 A Chrome extension for real-time password strength analysis and secure local storage. Features character-by-character analysis, duplicate detection, password reuse warnings, and saves credentials to local text files. Built with Chrome Native Messaging and Python. Educational project.
->>>>>>> 36eb67dbe67210290b54e99164b790e608a8b250
